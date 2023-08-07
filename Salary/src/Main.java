@@ -22,13 +22,16 @@ class Employee {
     }
 }
 public class Main {
-    static List<Employee> employees = new ArrayList<>();
+    
 
     public static void main(String[] args) {
+         
+         
+     static List<Employee> employees = new ArrayList<>();
         Scanner read = new Scanner(System.in);
 
         while (true) {
-            System.out.println("1. Create Add Employee. \n 2. Show EmployeeDetails. \n 3. Exit");
+            System.out.println("1. Create Add Employee. \n 2. Show Employee Details. \n 3. Exit");
             System.out.print("Enter your Choice: ");
             int choice = read.nextInt();
 
@@ -49,8 +52,7 @@ public class Main {
                     }
                     break;
                 case 3:
-                    System.out.println("Exiting...");
-                    System.exit(0);
+                    System.out.println("Exiting");
                     break;
                 default:
                     System.out.println("Invalid choice. Please choose again.");
